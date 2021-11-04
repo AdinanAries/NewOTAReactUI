@@ -1,8 +1,10 @@
 function Footer(){
     return (
-        <div>
+        <footer>
+            <div className="wrapper">
 
-        </div>
+            </div>
+        </footer>
     );
 }
 

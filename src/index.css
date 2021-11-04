@@ -1,1 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+}
 
+body {
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(53, 115, 173);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+main {
+  min-height: 1200px;
+}
+
+footer {
+  background-color: rgb(163, 97, 194);
+  min-height: 300px;
+}
+
+.hero-section {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  padding-top: 80px;
+  background: linear-gradient(
+      155deg,
+      rgba(106, 204, 250, 0.87),
+      rgba(250, 92, 255, 0.918)
+    ),
+    url("./icons/flights_bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*.main-search-form {
+  padding: 10px;
+  background-color: white;
+  min-height: 100px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+}*/
+
+.two-search-inputs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-search-inputs-container .each_flex-side {
+  width: calc(50% - 5px);
+}
+.main-search_txt_input {
+  padding-left: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.65);
+  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
+  width: 100%;
+}
+.main-search_txt_input input[type="text"], .main-search_txt_input input[type="number"] {
+  margin-left: 5px;
+  width: calc(100% - 30px);
+  padding: 14px;
+  padding-left: 0;
+  background: none;
+  border: none;
+}
+.main-search_txt_input i {
+  color: rgba(97, 120, 131, 0.87);
+}
+.searchBtn {
+  border-radius: 100px;
+  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
+  background-color: rgb(54, 117, 168);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.searchBtn:hover,
+.switchinputsBtn:hover {
+  background-color: rgb(46, 96, 138);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.switchinputsBtn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: rgb(54, 117, 168);
+  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
+  cursor: pointer;
+}
+.header-menu-items {
+  display: flex;
+  height: 50px;
+}
+.header-menu-items .each-header-menu-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 25px;
+}
+.header-menu-items .each-header-menu-item p {
+  color: white;
+}
+.header-menu-items .each-header-menu-item i {
+  color: rgb(255, 168, 236);
+  margin-right: 5px;
+}
+.why-choose-us-container {
+  margin-top: -0px;
+  display: flex;
+  justify-content: space-between;
+  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+  background: white;
+  border-radius: 10px;*/
+  padding: 30px 0;
+}
+.why-choose-us-container .each-choose-us-container {
+  width: 32%;
+  padding: 15px;
+  border-radius: 50px;
+  border: 5px solid rgb(207, 224, 231);
+}
+.searchFormChkInputLbl {
+  color: rgb(28, 94, 110);
+  padding: 10px 20px;
+  border-radius: 50px;
+  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
+  cursor: pointer;
+}
+.searchFormChkInputLbl:hover {
+  color: white;
+  background-color: rgb(51, 135, 156);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.searchFormChkInputLbl.active {
+  color: white;
+  background-color: rgb(185, 103, 164);
+}
+.searchFormChkInputLbl.disabled {
+  color: white;
+  background-color: rgb(206, 206, 206);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+/*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
