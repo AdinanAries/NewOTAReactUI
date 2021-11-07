@@ -5,7 +5,7 @@ function Header(){
             <div className="wrapper">
                 <div style={{display: "flex", justifyContent: "space-between"}}>
                     <div style={{height: "50px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                        <p style={{color: "white"}}>Logo</p>
+                        <p style={{color: "white"}}>Willgo.com</p>
                     </div>
                     <div className="header-menu-items">
                         <div className="each-header-menu-item">
