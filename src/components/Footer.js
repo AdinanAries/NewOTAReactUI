@@ -20,7 +20,7 @@ function Footer(){
                                 Subscribe your email to get latest price updates</p>
                             <div style={{marginTop: 10, borderRadius: 50, overflow: "hidden", border: "4px solid rgba(255,255,255,0.2)"}}>
                                 <input style={{width: "100%", padding: 15, paddingBottom: 5, border: "none", borderRadius: 0}} type="email" placeholder="enter your email here"/>
-                                <div style={{padding: 10, color: "pink", backgroundColor: "rgb(155,55,155)", textAlign: "center", cursor: "pointer", borderTop: "4px solid rgba(255,255,255,0.2)"}}>
+                                <div style={{padding: 10, color: "white", backgroundColor: "rgb(54, 117, 168)", textAlign: "center", cursor: "pointer", borderTop: "4px solid rgba(255,255,255,0.2)"}}>
                                     <i className="fa fa-check" style={{marginRight: 5}}></i>subscribe
                                 </div>
                             </div>
