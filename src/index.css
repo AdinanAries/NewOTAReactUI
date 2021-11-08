@@ -13,7 +13,67 @@ ul li {
 }
 body {
 }
-
+/*-----------------------------------------------------------*/
+.drp-selected {
+  display: none !important;
+}
+.ui-datepicker {
+  z-index: 5 !important;
+  width: 300px;
+  border: none !important;
+  color: #e25a00 !important;
+  display: none;
+  padding: 10px 20px;
+  position: absolute;
+  margin-left: 4px !important;
+}
+.secondJQuery {
+  margin-left: -205px !important;
+}
+.ui-datepicker div,
+.ui-datepicker a span.ui-icon {
+  border: none !important;
+  background-color: rgb(173, 255, 255) !important;
+  color: #003f7a !important;
+}
+.ui-datepicker-header {
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.2),
+    0px 0px 2.9px rgba(0, 0, 0, 0.23);
+}
+.ui-datepicker a {
+  background: none !important;
+  color: white !important;
+  border: none !important;
+  background-color: #003f7a !important;
+  border-radius: 3px !important;
+  font-size: 14px !important;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.3),
+    0px 0px 2.9px rgba(0, 0, 0, 0.33);
+}
+.ui-datepicker a.ui-corner-all {
+  border: none !important;
+  background-color: rgb(173, 255, 255) !important;
+  box-shadow: none !important;
+}
+.ui-datepicker a:hover {
+  background-color: #e25a00 !important;
+  color: white !important;
+}
+.ui-datepicker a.ui-corner-all:hover {
+  background: none !important;
+}
+.ui-autocomplete {
+  max-width: calc(100% - 50px) !important;
+  background-color: white;
+  font-size: 14px !important;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.3),
+    0px 0px 2.9px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+}
+.ui-menu-item {
+  padding: 2px;
+}
+/*-----------------------------------------------------------*/
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -27,7 +87,14 @@ header {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
   z-index: 10;
 }
-
+.header_humburger_menu {
+  display: none;
+  padding-top: 10px;
+}
+.header_humburger_menu i {
+  color: rgba(136, 211, 241, 0.685);
+  font-size: 31px;
+}
 main {
 }
 
@@ -50,7 +117,10 @@ footer {
   background-repeat: no-repeat;
   background-position: right;
 }
-
+.search-form-container {
+  margin-left: 30px;
+  max-width: 900px;
+}
 /*.main-search-form {
   padding: 10px;
   background-color: white;
@@ -64,9 +134,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .two-search-inputs-container .each_flex-side {
   width: calc(50% - 5px);
+}
+.two-search-inputs-container .first {
+  width: 50%;
 }
 .main-search_txt_input {
   padding-left: 14px;
@@ -105,6 +177,10 @@ footer {
 .switchinputsBtn:hover {
   background-color: rgb(213, 231, 255);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.33);
+}
+.search_forms_to_where_input_fld_container {
+  margin-left: -7px;
+  position: relative;
 }
 .switchinputsBtn {
   transition: all 0.3s;
@@ -260,4 +336,184 @@ footer {
   color: rgba(0, 0, 0, 0.329);
   cursor: pointer;
 }
+.autocomplete_list_airport_city_name {
+  font-size: 14px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.8);
+}
+.autocomplete_list_airport_city_name i {
+  color: slateblue;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.autocomplete_list_country_name {
+  margin-left: 23px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.autocomplete_list_each_item_container {
+  padding: 10px;
+  cursor: pointer;
+}
+.download_mobile_app_section_container {
+  display: flex;
+  background-color: rgba(233, 233, 11, 0.15);
+  border: 5px solid rgba(233, 233, 11, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+.download_mobile_app_btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+.footer_section_flex_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
+@media screen and (max-width: 700px) {
+  /*----------------------------------------------*/
+  .daterangepicker:before {
+    display: none !important;
+    top: -7px;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+  }
+  .daterangepicker:before, .daterangepicker:after {
+    display: none !important;
+    position: absolute;
+    display: inline-block;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+  }
+  .daterangepicker {
+    position: fixed !important;
+    top: 43px !important;
+    left: 0 !important;
+    min-width: 100vw;
+    border-radius: 0 !important;
+    min-height: calc(100vh - 43px);
+  }
+  .drp-calendar {
+    min-width: calc(100% - 20px) !important;
+  }
+  .drp-buttons {
+    border: none !important;
+    padding: 20px !important;
+  }
+  .table-condensed thead tr th {
+    padding-bottom: 10px !important;
+    color: #e25a00 !important;
+  }
+  .applyBtn,
+  .cancelBtn {
+    border: none !important;
+    color: white !important;
+    background-color: rgb(231, 124, 2);
+    padding: 10px !important;
+    border-radius: 4px !important;
+  }
+  .cancelBtn {
+    background-color: rgb(0, 127, 177);
+  }
+  .daterangepicker select.monthselect,
+  .daterangepicker select.yearselect {
+    padding: 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  /*----------------------------------------------*/
+  .header_content_container {
+    padding: 0 20px;
+  }
+  .header_humburger_menu {
+    display: block;
+  }
+  .header-menu-items {
+    display: none;
+  }
+  .searchFormChkInputLbl {
+    background-color: rgba(68, 127, 163, 0.39);
+    color: rgb(230, 248, 255);
+  }
+  .searchFormChkInputLbl i {
+    color: rgb(136, 212, 241);
+  }
+  .search-form-container {
+    margin-left: 0;
+    padding: 0 5px;
+  }
+  .forms_class_guests_cabin_settings_container {
+    background: none;
+  }
+  .search_forms_to_where_input_fld_container {
+    margin-left: 0;
+    position: relative;
+  }
+  .search_forms_from_where_input_fld_container {
+    margin-bottom: 5px;
+  }
+  .switchinputsBtn {
+    display: none;
+  }
+  .two-search-inputs-container {
+    display: block;
+  }
+  .two-search-inputs-container .each_flex-side {
+    width: 100%;
+  }
+  .two-search-inputs-container .first {
+    width: 100%;
+  }
+  .airports_inputs_with_auto_complete {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    border-radius: 0;
+    height: calc(100vh - 50px);
+  }
+  .why-choose-us-container {
+    margin-top: -0px;
+    display: block;
+    padding: 30px 5px;
+    padding-bottom: 10px;
+  }
+  .why-choose-us-container .each-choose-us-container {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .download_mobile_section {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  .download_mobile_app_section_container {
+    display: block;
+    margin-top: 0;
+  }
+  .download_mobile_app_btn_container {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .download_mobile_app_title {
+    margin-top: 10px;
+  }
+  .footer_section_flex_container {
+    display: block;
+  }
+  .footer_section_each_flex_section_container {
+    margin-bottom: 30px;
+  }
+  .footer_about_text {
+    max-width: 100% !important;
+  }
+  .footer_very_lower_text {
+    padding-bottom: 30px !important;
+  }
+}

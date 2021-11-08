@@ -3,7 +3,7 @@ function Header(){
     return (
         <header>
             <div className="wrapper">
-                <div style={{display: "flex", justifyContent: "space-between"}}>
+                <div className="header_content_container" style={{display: "flex", justifyContent: "space-between"}}>
                     <div style={{height: "50px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         <p style={{color: "white"}}>Willgo.com</p>
                     </div>
@@ -27,6 +27,11 @@ function Header(){
                             <p>
                                 <i className="fa fa-user" />Login
                             </p>
+                        </div>
+                    </div>
+                    <div className="header_humburger_menu">
+                        <div>
+                            <i className="fa fa-bars"></i>
                         </div>
                     </div>
                 </div>

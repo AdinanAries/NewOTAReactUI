@@ -3,8 +3,8 @@ import $ from "jquery";
 function SearchForm(){
     return(
         <div className="main-search-form">
-            <div style={{display: "flex", marginBottom: 5}}>
-                <div style={{marginRight: 5, width: "calc(50% - 5px)"}}>
+            <div className="two-search-inputs-container" style={{marginBottom: 5}}>
+                <div className="each_flex-side first">
                     <div className="forms_class_guests_cabin_settings_container">
                         <div id="forms_main_class_guests_cabin_settings_pane" className="forms_class_guests_cabin_settings_pane">
                             <p onClick={()=>document.getElementById("forms_main_class_guests_cabin_settings_pane").style.display = "none"} className="airports_auto_complete_close_btn">&times;</p>
@@ -114,7 +114,7 @@ function SearchForm(){
                         <i style={{marginLeft: 10, color: "slateblue"}} className="fa fa-caret-down"></i>
                     </div>
                 </div>
-                <div style={{width: "50%"}}>
+                <div className="each_flex-side">
                     <div style={{width: "100%"}}>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-calendar-o"></i>
@@ -125,7 +125,7 @@ function SearchForm(){
             </div>
             <div>
                 <div className="two-search-inputs-container">
-                    <div style={{position: "relative"}} className="each_flex-side">
+                    <div style={{position: "relative"}} className="search_forms_from_where_input_fld_container each_flex-side">
                         <div id="from_where_airports_auto_complete_input" className="airports_inputs_with_auto_complete">
                             <p onClick={()=>document.getElementById("from_where_airports_auto_complete_input").style.display = "none"} className="airports_auto_complete_close_btn">&times;</p>
                             <input autocomplete="off" id="from_where_airports_auto_complete_input_fld" 
@@ -134,7 +134,7 @@ function SearchForm(){
                                         200);
                                 }} className="airports_auto_complete_input" type="text" placeholder="Where are you leaving from?"/>
                             <div className="airports_auto_complete_list_container">
-                                <ul>
+                                <ul id="flights_auto_complete_from_where_input_list">
                                     <li><div style={{padding: 10, display: "flex", flexDirection: "row", cursor: "pointer"}}>
                                         <div style={{height: 35, marginRight: 10, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <i className="fa fa-history" style={{color: "rgba(0,0,0,0.3)", fontSize: 17}}></i>
@@ -150,23 +150,12 @@ function SearchForm(){
                                             </div>
                                         </div>
                                     </div></li>
-                                    <li><div style={{padding: 10, cursor: "pointer"}}>
-                                        <div>
-                                            <p style={{fontSize: 14, fontWeight: "bolder", color: "rgba(0,0,0,0.8)"}}>
-                                                <i className="fa fa-plane" style={{color: "slateblue", marginRight: 10, fontSize: 16}}></i>
-                                                New York (LGA - Laguardia)
-                                            </p>
-                                            <p style={{marginLeft: 23, fontSize: 14, color: "rgba(0,0,0,0.8)"}}>
-                                                Ghana
-                                            </p>
-                                        </div>
-                                    </div></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-map-marker"></i>
-                            <input onClick={open_from_where_auto_complete_pane} type="text" placeholder="from where?" />
+                            <input id="search_forms_from_where_input_fld" onClick={open_from_where_auto_complete_pane} type="text" placeholder="from where?" />
                         </div>
                     </div>
                     <div id="main_switch_inputs_btn" className="switchinputsBtn"
@@ -175,7 +164,7 @@ function SearchForm(){
                             <i className="fa fa-exchange"></i>
                         </p>
                     </div>
-                    <div style={{marginLeft: -7, position: "relative"}} className="each_flex-side">
+                    <div className="search_forms_to_where_input_fld_container each_flex-side">
                         <div id="to_where_airports_auto_complete_input" className="airports_inputs_with_auto_complete">
                             <p onClick={()=>document.getElementById("to_where_airports_auto_complete_input").style.display = "none"} className="airports_auto_complete_close_btn">&times;</p>
                             <input autocomplete="off" id="to_where_airports_auto_complete_input_fld" 
@@ -184,7 +173,7 @@ function SearchForm(){
                                         200);
                                 }} className="airports_auto_complete_input" type="text" placeholder="Where are you going to?"/>
                             <div className="airports_auto_complete_list_container">
-                                <ul>
+                                <ul id="flights_auto_complete_to_where_input_list">
                                     <li><div style={{padding: 10, display: "flex", flexDirection: "row", cursor: "pointer"}}>
                                         <div style={{height: 35, marginRight: 10, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             <i className="fa fa-history" style={{color: "rgba(0,0,0,0.3)", fontSize: 17}}></i>
@@ -200,29 +189,18 @@ function SearchForm(){
                                             </div>
                                         </div>
                                     </div></li>
-                                    <li><div style={{padding: 10, cursor: "pointer"}}>
-                                        <div>
-                                            <p style={{fontSize: 14, fontWeight: "bolder", color: "rgba(0,0,0,0.8)"}}>
-                                                <i className="fa fa-plane" style={{color: "slateblue", marginRight: 10, fontSize: 16}}></i>
-                                                New York (LGA - Laguardia)
-                                            </p>
-                                            <p style={{marginLeft: 23, fontSize: 14, color: "rgba(0,0,0,0.8)"}}>
-                                                Ghana
-                                            </p>
-                                        </div>
-                                    </div></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-map-marker"></i>
-                            <input onClick={open_to_where_auto_complete_pane} type="text" placeholder="to where?" />
+                            <input id="search_forms_to_where_input_fld" onClick={open_to_where_auto_complete_pane} type="text" placeholder="to where?" />
                         </div>
                     </div>
                 </div>
             </div>
             <div  className="searchBtn">
-                Search
+            <i className="fa fa-search" style={{marginRight: 5}}></i>Search
             </div>
         </div>
     );

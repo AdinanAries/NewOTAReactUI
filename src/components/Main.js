@@ -7,7 +7,7 @@ function Main(){
         <main>
             <div className="hero-section">
                 <div style={{maxWidth: 1500, margin: "auto"}}>
-                    <div style={{marginLeft: 30, maxWidth: 900}}>
+                    <div className="search-form-container">
                         <SearchForm />
                     </div>
                 </div>
