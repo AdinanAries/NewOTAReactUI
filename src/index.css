@@ -438,10 +438,13 @@ footer {
     display: none;
   }
   .searchFormChkInputLbl {
+    font-size: 14px;
     background-color: rgba(68, 127, 163, 0.39);
     color: rgb(230, 248, 255);
   }
   .searchFormChkInputLbl i {
+    font-size: 14px !important;
+    margin-right: 5px !important;
     color: rgb(136, 212, 241);
   }
   .search-form-container {
