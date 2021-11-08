@@ -1,5 +1,6 @@
 import SearchForm from "./SearchForm";
 import ChooseUs from "./ChooseUs";
+import DownloadMobileApp from "./DownloadMobileApp";
 
 function Main(){
     return (
@@ -12,6 +13,7 @@ function Main(){
                 </div>
             </div>
             <ChooseUs />
+            <DownloadMobileApp />
         </main>
     );
 }
