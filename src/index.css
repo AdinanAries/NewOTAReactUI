@@ -13,6 +13,16 @@ ul li {
 }
 body {
 }
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1001;
+}
 /*-----------------------------------------------------------*/
 .drp-selected {
   display: none !important;
@@ -87,6 +97,15 @@ header {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
   z-index: 10;
 }
+.mobile-menu-header{
+  background-color: rgb(53, 115, 173);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-left: 20px;
+}
 .header_humburger_menu {
   display: none;
   padding-top: 10px;
@@ -144,7 +163,7 @@ footer {
   padding-left: 14px;
   border: 1px solid rgba(0, 0, 0, 0.123);
   border-radius: 9px;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: white;
   /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
   width: 100%;
 }
@@ -240,7 +259,7 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: white;
   margin-bottom: 10px;
   padding: 5px;
   border-radius: 9px;
@@ -384,12 +403,13 @@ footer {
     border-left: 7px solid transparent;
     border-bottom: 7px solid #ccc;
   }
-  .daterangepicker:before, .daterangepicker:after {
+  .daterangepicker:before,
+  .daterangepicker:after {
     display: none !important;
     position: absolute;
     display: inline-block;
     border-bottom-color: rgba(0, 0, 0, 0.2);
-    content: '';
+    content: "";
   }
   .daterangepicker {
     position: fixed !important;
@@ -439,7 +459,7 @@ footer {
   }
   .searchFormChkInputLbl {
     font-size: 14px;
-    background-color: rgba(68, 127, 163, 0.39);
+    background-color: rgb(68, 127, 163);
     color: rgb(230, 248, 255);
   }
   .searchFormChkInputLbl i {

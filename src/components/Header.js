@@ -1,3 +1,4 @@
+import { show_main_mobile_menu } from "./MobileMenu";
 
 function Header(){
     return (
@@ -30,7 +31,7 @@ function Header(){
                         </div>
                     </div>
                     <div className="header_humburger_menu">
-                        <div>
+                        <div onClick={show_main_mobile_menu}>
                             <i className="fa fa-bars"></i>
                         </div>
                     </div>
