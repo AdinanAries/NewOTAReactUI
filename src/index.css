@@ -457,6 +457,9 @@ footer {
   .header-menu-items {
     display: none;
   }
+  .hero-section{
+    background: none;
+  }
   .searchFormChkInputLbl {
     font-size: 14px;
     background-color: rgb(68, 127, 163);
