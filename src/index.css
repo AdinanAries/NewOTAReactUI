@@ -161,7 +161,7 @@ footer {
 }
 .main-search_txt_input {
   padding-left: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.123);
+  border: 1px solid rgba(0, 0, 0, 0.212);
   border-radius: 9px;
   background-color: white;
   /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
@@ -177,7 +177,7 @@ footer {
   border: none;
 }
 .main-search_txt_input i {
-  color: rgba(97, 120, 131, 0.87);
+  color: rgb(75, 100, 112);
 }
 .searchBtn {
   border-radius: 9px;
