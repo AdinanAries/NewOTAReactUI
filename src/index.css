@@ -93,8 +93,10 @@ header {
   height: 50px;
   position: fixed;
   width: 100%;
-  background-color: rgb(53, 115, 173);
-  /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.287);
+  /*background-color: rgb(53, 115, 173);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
   z-index: 10;
 }
 .mobile-menu-header{
@@ -117,7 +119,7 @@ header {
   margin-right: 15px;
 }
 .header_mobile_menus i {
-  color: rgba(136, 211, 241, 0.808);
+  color: rgb(11, 71, 95);
   font-size: 23px;
 }
 main {
@@ -240,11 +242,11 @@ footer {
   margin-right: 25px;
 }
 .header-menu-items .each-header-menu-item p {
-  color: white;
+  color: rgba(0, 0, 0, 0.849);
 }
 .header-menu-items .each-header-menu-item i {
-  color: rgba(253, 194, 240, 0.397);
-  margin-right: 5px;
+  color: rgb(42, 14, 36);
+  margin-right: 10px;
 }
 .why-choose-us-container {
   margin-top: -0px;
