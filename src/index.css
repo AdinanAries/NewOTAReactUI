@@ -424,11 +424,11 @@ footer {
   }
   .daterangepicker {
     position: fixed !important;
-    top: 43px !important;
+    top: -7px !important;
     left: 0 !important;
     min-width: 100vw;
     border-radius: 0 !important;
-    min-height: calc(100vh - 43px);
+    min-height: 100vh;
   }
   .drp-calendar {
     min-width: calc(100% - 20px) !important;
@@ -515,10 +515,11 @@ footer {
   }
   .airports_inputs_with_auto_complete {
     position: fixed;
-    top: 50px;
+    top: 0px;
     left: 0;
     border-radius: 0;
-    height: calc(100vh - 50px);
+    height: 100vh;
+    box-shadow: none;
   }
   .why-choose-us-container {
     margin-top: -0px;
