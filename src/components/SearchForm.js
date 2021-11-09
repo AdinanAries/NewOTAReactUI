@@ -200,7 +200,7 @@ function SearchForm(){
                 </div>
             </div>
             <div  className="searchBtn">
-            <i className="fa fa-search" style={{marginRight: 5}}></i>Search
+                <i className="fa fa-search" style={{marginRight: 5, color: "rgba(255,255,255,0.4)"}}></i>Search
             </div>
         </div>
     );

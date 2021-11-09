@@ -6,7 +6,7 @@ function Footer(){
                     <div className="footer_section_each_flex_section_container">
                         <div>
                             <p style={{fontWeight: "bolder", textAlign: "center", marginBottom: 15, letterSpacing: 0.5, fontFamily: "Courgette"}}>
-                                About WillGo</p>
+                                About Willgo</p>
                             <p className="footer_about_text" style={{color: "white", textAlign: "center", letterSpacing: 0.5, fontFamily: "Courgette", maxWidth: 250}}>
                             willgo.com is a online travel agency who's business operations targets mostly the African
                             travel market</p>
@@ -16,12 +16,12 @@ function Footer(){
                         <div>
                             <p style={{fontWeight: "bolder", textAlign: "center", marginBottom: 15, letterSpacing: 0.5, fontFamily: "Courgette"}}>
                                 Recieve Price Updates</p>
-                            <p style={{color: "white", textAlign: "center", letterSpacing: 0.5, fontFamily: "Courgette"}}>
+                            <p style={{color: "white", textAlign: "center", letterSpacing: 0.5, fontSize: 14}}>
                                 Subscribe your email to get latest price updates</p>
                             <div style={{marginTop: 10, borderRadius: 50, overflow: "hidden", border: "4px solid rgba(255,255,255,0.2)"}}>
                                 <input style={{width: "100%", padding: 15, paddingBottom: 5, border: "none", borderRadius: 0}} type="email" placeholder="enter your email here"/>
-                                <div style={{padding: 10, color: "white", backgroundColor: "rgb(54, 117, 168)", textAlign: "center", cursor: "pointer", borderTop: "4px solid rgba(255,255,255,0.2)"}}>
-                                    <i className="fa fa-check" style={{marginRight: 5}}></i>subscribe
+                                <div style={{padding: 10, color: "white", fontSize: 14, backgroundColor: "rgb(34, 91, 138)", textAlign: "center", cursor: "pointer", borderTop: "4px solid rgba(255,255,255,0.2)"}}>
+                                    <i className="fa fa-check" style={{marginRight: 5, color: "rgba(255,255,255,0.4)"}}></i>subscribe
                                 </div>
                             </div>
                         </div>

@@ -13,18 +13,18 @@ const MobileMenu = () => {
             </div>
             <div style={{height: "calc(100wh - 50px)", padding: 10}}>
                 <div style={{height: "calc(50vh - 45px)", marginBottom: 10, display: "flex", justifyContent: "space-between"}}>
-                    <div style={{width: "calc(50% - 5px)", height: "100%", background: "linear-gradient(155deg, rgba(106, 204, 250, 0.87), rgba(250, 92, 255, 0.918))", borderRadius: "10px"}}>
+                    <div style={{width: "calc(50% - 5px)", height: "100%", borderRadius: "10px"}}>
 
                     </div>
-                    <div style={{width: "calc(50% - 5px)", height: "100%", background: "linear-gradient(155deg, rgba(106, 204, 250, 0.87), rgba(250, 92, 255, 0.918))", borderRadius: "10px"}}>
+                    <div style={{width: "calc(50% - 5px)", height: "100%", borderRadius: "10px"}}>
 
                     </div>
                 </div>
                 <div style={{height: "calc(50vh - 45px)", display: "flex", justifyContent: "space-between"}}>
-                    <div style={{width: "calc(50% - 5px)", height: "100%", background: "linear-gradient(155deg, rgba(106, 204, 250, 0.87), rgba(250, 92, 255, 0.918))", borderRadius: "10px"}}>
+                    <div style={{width: "calc(50% - 5px)", height: "100%", borderRadius: "10px"}}>
 
                     </div>
-                    <div style={{width: "calc(50% - 5px)", height: "100%", background: "linear-gradient(155deg, rgba(106, 204, 250, 0.87), rgba(250, 92, 255, 0.918))", borderRadius: "10px"}}>
+                    <div style={{width: "calc(50% - 5px)", height: "100%", borderRadius: "10px"}}>
 
                     </div>
                 </div>
