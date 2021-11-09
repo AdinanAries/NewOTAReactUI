@@ -115,7 +115,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 .header_mobile_menus i {
   color: rgb(11, 71, 95);
