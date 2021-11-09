@@ -6,7 +6,7 @@ var ChooseUs = ()=>{
     return (
         <div>
             <div className="wrapper">
-                <h1 style={{textAlign: "center", marginTop: 20, color: "darkslateblue", marginBottom: "10px", fontFamily: "Courgette"}}
+                <h1 style={{textAlign: "center", marginTop: 20, color: "#c900b0", marginBottom: "10px", fontFamily: "Courgette"}}
                 >We are the Best!</h1>
                 <p style={{textAlign: "center", fontFamily: "Courgette"}}
                 >Here is the reason why we claim to be the best in the market</p>

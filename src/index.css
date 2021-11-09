@@ -459,6 +459,7 @@ footer {
   }
   .hero-section{
     background: none;
+    padding-bottom: 0;
   }
   .searchFormChkInputLbl {
     font-size: 14px;
