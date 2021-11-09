@@ -12,6 +12,7 @@ ul li {
   list-style-type: none;
 }
 body {
+  background-color: rgb(229, 233, 241);
 }
 .mobile-menu {
   display: none;
@@ -91,8 +92,8 @@ body {
 
 header {
   height: 60px;
-  background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(229, 233, 241);
   /*background-color: rgb(53, 115, 173);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);*/
   z-index: 10;
@@ -270,7 +271,6 @@ footer {
   position: relative;
   display: flex;
   flex-direction: row;
-  background-color: white;
   margin-bottom: 10px;
   padding: 5px;
   border-radius: 9px;

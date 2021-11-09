@@ -155,7 +155,7 @@ function SearchForm(){
                         </div>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-map-marker"></i>
-                            <input id="search_forms_from_where_input_fld" onClick={open_from_where_auto_complete_pane} type="text" placeholder="from where?" />
+                            <input id="search_forms_from_where_input_fld" onClick={open_from_where_auto_complete_pane} type="text" autocomplete="off" placeholder="from where?" />
                         </div>
                     </div>
                     <div id="main_switch_inputs_btn" className="switchinputsBtn"
@@ -194,7 +194,7 @@ function SearchForm(){
                         </div>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-map-marker"></i>
-                            <input id="search_forms_to_where_input_fld" onClick={open_to_where_auto_complete_pane} type="text" placeholder="to where?" />
+                            <input id="search_forms_to_where_input_fld" onClick={open_to_where_auto_complete_pane} type="text" autocomplete="off" placeholder="to where?" />
                         </div>
                     </div>
                 </div>

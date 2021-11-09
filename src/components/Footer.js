@@ -18,9 +18,9 @@ function Footer(){
                                 Recieve Price Updates</p>
                             <p style={{color: "white", textAlign: "center", letterSpacing: 0.5, fontSize: 14}}>
                                 Subscribe your email to get latest price updates</p>
-                            <div style={{marginTop: 10, borderRadius: 50, overflow: "hidden", border: "4px solid rgba(255,255,255,0.2)"}}>
+                            <div style={{marginTop: 10, borderRadius: 9, overflow: "hidden", border: "1px solid rgba(0,0,0,0.35)"}}>
                                 <input style={{width: "100%", padding: 15, paddingBottom: 5, border: "none", borderRadius: 0}} type="email" placeholder="enter your email here"/>
-                                <div style={{padding: 10, color: "white", backgroundColor: "rgb(34, 91, 138)", textAlign: "center", cursor: "pointer", borderTop: "4px solid rgba(255,255,255,0.2)"}}>
+                                <div style={{padding: 10, color: "white", backgroundColor: "rgb(34, 91, 138)", textAlign: "center", cursor: "pointer"}}>
                                     <i className="fa fa-check" style={{marginRight: 5, color: "rgba(255,255,255,0.4)"}}></i>subscribe
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ function Footer(){
                         </div>
                     </div>
                 </div>
-                <p className="footer_very_lower_text" style={{marginTop: 20, textAlign: "center", opacity: 0.6, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.3)"}}>
+                <p className="footer_very_lower_text" style={{marginTop: 20, textAlign: "center", opacity: 0.6, paddingTop: 20, color: "rgba(255,255,255,0.5)", borderTop: "1px solid rgba(255,255,255,0.3)"}}>
                     &copy; 2022 willgo.com, all rights reserved</p>
             </div> 
         </footer>
