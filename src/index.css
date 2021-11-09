@@ -108,11 +108,17 @@ header {
 }
 .header_humburger_menu {
   display: none;
-  padding-top: 10px;
 }
-.header_humburger_menu i {
-  color: rgba(136, 211, 241, 0.685);
-  font-size: 31px;
+.header_mobile_menus div{
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+}
+.header_mobile_menus i {
+  color: rgba(136, 211, 241, 0.808);
+  font-size: 21px;
 }
 main {
 }

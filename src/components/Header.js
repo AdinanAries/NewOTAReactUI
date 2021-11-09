@@ -31,8 +31,10 @@ function Header(){
                         </div>
                     </div>
                     <div className="header_humburger_menu">
-                        <div onClick={show_main_mobile_menu}>
-                            <i className="fa fa-bars"></i>
+                        <div className="header_mobile_menus" style={{display: "flex", flexDirection: "row"}}>
+                            <div><i className="fa fa-search"></i></div>
+                            <div><i className="fa fa-briefcase"></i></div>
+                            <div style={{marginRight: 0}}><i className="fa fa-user-circle"></i></div>
                         </div>
                     </div>
                 </div>
