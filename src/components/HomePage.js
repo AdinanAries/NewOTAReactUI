@@ -2,7 +2,7 @@ import Main from "./Main";
 
 function HomePage(){
     return(
-        <div>
+        <div id="home_page">
             <Main />
         </div>
     );

@@ -1,5 +1,7 @@
 import { show_main_mobile_menu } from "./MobileMenu";
 
+import { show_login_page, show_home_page, show_trips_page } from '../helpers/PageRoutingFuncs';
+
 function Header(){
     return (
         <header>
@@ -8,8 +10,9 @@ function Header(){
                     <div style={{height: "60px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         <p style={{color: ""}}>Willgo.com</p>
                     </div>
+                    
                     <div className="header-menu-items">
-                        <div className="each-header-menu-item">
+                        <div onClick={show_home_page} className="each-header-menu-item">
                             <p>
                                 <i className="fa fa-home" />Home
                             </p>
@@ -19,12 +22,12 @@ function Header(){
                                 <i className="fa fa-globe" />Explore
                             </p>
                         </div>
-                        <div className="each-header-menu-item">
+                        <div onClick={show_trips_page} className="each-header-menu-item">
                             <p>
-                                <i className="fa fa-briefcase" />Trip
+                                <i className="fa fa-briefcase" />Trips
                             </p>
                         </div>
-                        <div className="each-header-menu-item">
+                        <div onClick={show_login_page} className="each-header-menu-item">
                             <p>
                                 <i className="fa fa-user" />Login
                             </p>
@@ -32,11 +35,12 @@ function Header(){
                     </div>
                     <div className="header_humburger_menu">
                         <div className="header_mobile_menus" style={{display: "flex", flexDirection: "row"}}>
-                            <div><i className="fa fa-search"></i></div>
-                            <div><i className="fa fa-briefcase"></i></div>
-                            <div style={{marginRight: 0}}><i className="fa fa-user-circle"></i></div>
+                            <div onClick={show_home_page}><i className="fa fa-search"></i></div>
+                            <div onClick={show_trips_page}><i className="fa fa-briefcase"></i></div>
+                            <div onClick={show_login_page} style={{marginRight: 0}}><i className="fa fa-user-circle"></i></div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </header>
