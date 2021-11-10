@@ -6,7 +6,7 @@ function Footer(){
                     <div className="footer_section_each_flex_section_container">
                         <div>
                             <p style={{fontWeight: "bolder", textAlign: "center", marginBottom: 15, letterSpacing: 0.5, fontFamily: "Courgette"}}>
-                                About Willgo</p>
+                                About Wellgo</p>
                             <p className="footer_about_text" style={{color: "white", textAlign: "center", letterSpacing: 0.5, fontFamily: "Courgette", maxWidth: 250}}>
                             willgo.com is a online travel agency who's business operations targets mostly the African
                             travel market</p>

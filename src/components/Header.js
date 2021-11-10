@@ -15,7 +15,7 @@ function Header(){
                                 <img src={WillgoLogo}/></p>
                             <div className="site-logo-txt">
                                 <p>
-                                    Willgo
+                                    Wellgo
                                     <span>.com</span>
                                 </p>
                             </div>
