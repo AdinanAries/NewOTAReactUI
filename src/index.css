@@ -501,7 +501,7 @@ footer {
     display: none;
   }
   .site-logo p img{
-    width: 40px;
+    width: 45px;
   }
   .site-logo-txt{
     margin-left: 5px;
@@ -513,7 +513,7 @@ footer {
     color: rgb(44, 107, 128);
     font-family: Sans-serif;
     font-weight: 1000;
-    font-size: 18px;
+    font-size: 20px;
   }
   .site-logo-txt span{
     display: none;
