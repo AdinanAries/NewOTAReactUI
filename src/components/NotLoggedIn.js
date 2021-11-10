@@ -1,5 +1,7 @@
 import loginIcon from "../icons/loginIcon.svg";
 
+import { show_login_page } from '../helpers/PageRoutingFuncs';
+
 export default function NotLoggedIn(){
     return(
         <div>
@@ -8,7 +10,7 @@ export default function NotLoggedIn(){
 
             </div>
             <div style={{marginBottom: 30}}>
-                <div style={{margin: "auto", textAlign: "center", maxWidth: 450, padding: 10, backgroundColor: "rgb(54, 117, 168)", borderRadius: 9, color: "white"}}>
+                <div onClick={show_login_page} style={{margin: "auto", textAlign: "center", maxWidth: 450, padding: 10, backgroundColor: "rgb(54, 117, 168)", borderRadius: 9, color: "white"}}>
                     Please Login or Create an Account
                 </div>
             </div>
