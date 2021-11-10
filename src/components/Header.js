@@ -10,12 +10,13 @@ function Header(){
             <div className="wrapper">
                 <div className="header_content_container" style={{display: "flex", justifyContent: "space-between"}}>
                     <div style={{height: "60px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                        <div style={{display: "flex"}}>
-                            <p><img src={WillgoLogo} style={{width: 60}}/></p>
-                            <div style={{marginLeft: 5, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                <p style={{color: "rgb(44, 107, 128)", fontFamily: "Sans-serif", fontWeight: "1000", fontSize: 23,}}>
+                        <div className="site-logo">
+                            <p className="site-logo-img">
+                                <img src={WillgoLogo}/></p>
+                            <div className="site-logo-txt">
+                                <p>
                                     Willgo
-                                    <span style={{color: "#c900b0"}}>.com</span>
+                                    <span>.com</span>
                                 </p>
                             </div>
                         </div>
