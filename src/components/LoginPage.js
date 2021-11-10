@@ -2,7 +2,7 @@ export default function LoginPage(){
     return (
         <main id="login_page" style={{display: "none"}}>
             <div className="wrapper">
-                <div style={{padding: "20px 5px", minHeight: "calc(100vh - 350px)"}}>
+                <div style={{padding: "30px 5px"}}>
                     <p style={{marginLeft: 20, fontSize: 30, fontWeight: "bolder", color: "rgba(0,0,0,0.8)"}}>Login</p>
                     <div style={{maxWidth: "600px", margin: "auto", marginTop: 30, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, overflow: "hidden"}}>
                         <p style={{padding: 15, backgroundColor: "rgba(0,99,180,0.8)", fontWeight: "bolder", letterSpacing: 1, marginBottom: 10, color: "white"}}>
@@ -23,7 +23,7 @@ export default function LoginPage(){
                                 Login
                             </div>
                             <p style={{marginTop: 15, color: "darkcyan", cursor: "pointer"}}>Forgot your password?</p>
-                            <p style={{marginTop: 20, backgroundColor: "slateblue", width: "fit-content", color: "white", padding: "10px 20px", borderRadius: 5, cursor: "pointer"}}>
+                            <p style={{marginTop: 20, backgroundColor: "slateblue", width: "fit-content", color: "white", textAlign: "center", padding: "10px", width: "200px", borderRadius: 5, cursor: "pointer"}}>
                                 Create an Account</p>
                         </div>
                     </div>
