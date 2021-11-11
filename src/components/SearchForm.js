@@ -111,7 +111,7 @@ function SearchForm(){
                             <i style={{fontSize: 15, marginRight: 10}} className="fa fa-repeat"></i>
                             One-way
                         </div>
-                        <i style={{marginLeft: 10, color: "slateblue"}} className="fa fa-caret-down"></i>
+                        <i style={{marginLeft: 10, color: "rgb(43, 52, 61)"}} className="fa fa-angle-down"></i>
                     </div>
                 </div>
                 <div className="each_flex-side">

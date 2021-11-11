@@ -25,7 +25,7 @@ function Header(){
                     <div className="header-menu-items">
                         <div onClick={show_home_page} className="each-header-menu-item active">
                             <p>
-                                <i className="fa fa-home" />Home
+                                <i className="fa fa-search" />Search
                             </p>
                         </div>
                         <div className="each-header-menu-item">
