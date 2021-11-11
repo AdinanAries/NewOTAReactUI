@@ -23,7 +23,7 @@ function Header(){
                     </div>
                     
                     <div className="header-menu-items">
-                        <div onClick={show_home_page} className="each-header-menu-item">
+                        <div onClick={show_home_page} className="each-header-menu-item active">
                             <p>
                                 <i className="fa fa-home" />Home
                             </p>
@@ -46,9 +46,9 @@ function Header(){
                     </div>
                     <div className="header_humburger_menu">
                         <div className="header_mobile_menus" style={{display: "flex", flexDirection: "row"}}>
-                            <div onClick={show_home_page}><i className="fa fa-search"></i></div>
-                            <div onClick={show_trips_page}><i className="fa fa-briefcase"></i></div>
-                            <div onClick={show_login_page} style={{marginRight: 0}}><i className="fa fa-user-circle"></i></div>
+                            <div className="header_mobile_menus_item active" onClick={show_home_page}><i className="fa fa-search"></i></div>
+                            <div className="header_mobile_menus_item" onClick={show_trips_page}><i className="fa fa-briefcase"></i></div>
+                            <div className="header_mobile_menus_item" onClick={show_login_page} style={{marginRight: 0}}><i className="fa fa-user-circle"></i></div>
                         </div>
                     </div>
                     

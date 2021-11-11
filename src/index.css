@@ -121,6 +121,9 @@ header {
   color: rgb(11, 71, 95);
   font-size: 23px;
 }
+.header_mobile_menus_item.active i{
+  color: #c900b0;
+}
 .site-logo{
   display: flex;
 }
@@ -283,6 +286,13 @@ footer {
 .header-menu-items .each-header-menu-item i {
   color: rgb(11, 71, 95);;
   margin-right: 10px;
+}
+.header-menu-items .each-header-menu-item.active p{
+  font-weight: bolder;
+  color: #c900b0 !important;
+}
+.header-menu-items .each-header-menu-item.active i{
+  color: #c900b0 !important;
 }
 .why-choose-us-container {
   margin-top: -0px;
