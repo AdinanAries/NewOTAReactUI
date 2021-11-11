@@ -152,7 +152,7 @@ main {
 }
 
 footer {
-  background-color: rgb(53, 115, 173);
+  background-color: rgb(43, 52, 61);
   min-height: 300px;
 }
 
@@ -299,11 +299,11 @@ footer {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  padding: 5px;
+  padding-right: 5px;
   border-radius: 9px;
 }
 .searchFormChkInputLbl {
-  padding: 10px;
+  padding: 14px;
   width: 33%;
   border-radius: 6px;
   background-color: rgb(26, 102, 153);
