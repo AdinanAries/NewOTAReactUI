@@ -150,7 +150,12 @@ header {
 }
 main {
 }
-
+.footer-site-logo{
+  text-align: center;
+}
+.footer-site-logo img{
+  width: 90px;
+}
 footer {
   background-color: rgb(43, 52, 61);
   min-height: 300px;
