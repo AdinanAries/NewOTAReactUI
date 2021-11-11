@@ -9,15 +9,15 @@ export default function LoginPage(){
                             <i style={{marginRight: 10, fontSize: 20, color: "rgba(255,255,255,0.5)"}} className="fa fa-sign-in"></i>
                             Sign In</p>
                         <div style={{padding: "10px",}}>
-                            <div style={{marginBottom: 10}}>
-                                <p style={{color: "rgba(0,0,0,0.7)", marginLeft: 10, fontSize: 14}}>
-                                    <i className="fa fa-envelope" style={{marginRight: 5, color: "darkslateblue"}}></i>Email</p>
-                                <input type="email" placeholder="enter your email here"  style={{marginTop: 5, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
+                            <div style={{marginBottom: 20}}>
+                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14, fontWeight: "bolder"}}>
+                                    <i className="fa fa-envelope" style={{marginRight: 10, color: "darkslateblue"}}></i>Email</p>
+                                <input type="email" placeholder="enter your email here"  style={{marginTop: 10, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
                             </div>
                             <div style={{marginBottom: 5}}>
-                                <p style={{color: "rgba(0,0,0,0.7)", marginLeft: 10, fontSize: 14}}>
-                                    <i className="fa fa-key" style={{marginRight: 5, color: "darkslateblue"}}></i>Password</p>
-                                <input type="password" placeholder="enter your password here"  style={{marginTop: 5, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
+                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14, fontWeight: "bolder"}}>
+                                    <i className="fa fa-key" style={{marginRight: 10, color: "darkslateblue"}}></i>Password</p>
+                                <input type="password" placeholder="enter your password here"  style={{marginTop: 10, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
                             </div>
                             <div style={{color: "white", backgroundColor: "rgb(54, 117, 168)", textAlign: "center", padding: 14, borderRadius: 9}}>
                                 Login
