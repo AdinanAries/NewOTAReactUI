@@ -11,7 +11,7 @@ export default function NotLoggedIn(){
             </div>
             <div style={{marginBottom: 30}}>
                 <div onClick={show_login_page} style={{margin: "auto", textAlign: "center", maxWidth: 450, padding: "14px 10px", backgroundColor: "rgb(43, 52, 61)", borderRadius: 9, color: "white"}}>
-                    Please Login or Create an Account
+                    Login or Create an Account
                 </div>
             </div>
         </div>
