@@ -10,19 +10,19 @@ export default function LoginPage(){
                             Sign In</p>
                         <div style={{padding: "10px",}}>
                             <div style={{marginBottom: 20}}>
-                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14, fontWeight: "bolder"}}>
-                                    <i className="fa fa-envelope" style={{marginRight: 10, color: "darkslateblue"}}></i>Email</p>
+                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14}}>
+                                    <i className="fa fa-envelope" style={{marginRight: 7, color: "darkslateblue"}}></i>Email</p>
                                 <input type="email" placeholder="enter your email here"  style={{marginTop: 10, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
                             </div>
                             <div style={{marginBottom: 5}}>
-                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14, fontWeight: "bolder"}}>
-                                    <i className="fa fa-key" style={{marginRight: 10, color: "darkslateblue"}}></i>Password</p>
+                                <p style={{color: "rgba(0,0,0,0.6)", marginLeft: 10, fontSize: 14}}>
+                                    <i className="fa fa-key" style={{marginRight: 7, color: "darkslateblue"}}></i>Password</p>
                                 <input type="password" placeholder="enter your password here"  style={{marginTop: 10, padding: 14, border: "1px solid rgba(0,0,0,0.2)", borderRadius: 9, width: "100%"}}/>
                             </div>
                             <div style={{color: "white", backgroundColor: "rgb(54, 117, 168)", textAlign: "center", padding: 14, borderRadius: 9}}>
                                 Login
                             </div>
-                            <p style={{marginTop: 15, color: "darkcyan", cursor: "pointer"}}>Forgot your password?</p>
+                            <p style={{marginTop: 15, color: "darkcyan", cursor: "pointer", fontSize: 14}}>Forgot your password?</p>
                             <p style={{marginTop: 20, backgroundColor: "slateblue", width: "fit-content", color: "white", textAlign: "center", padding: "14px", width: "200px", borderRadius: 5, cursor: "pointer"}}>
                                 Create an Account</p>
                         </div>
