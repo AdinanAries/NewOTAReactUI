@@ -24,7 +24,7 @@ export default function ExplorePage(){
                         make you want to do it over again
                     </p>
                     <div style={{backgroundColor: "rgba(0,0,0,0.4)", fontFamily: "'Prompt', sans-serif", color: "white", padding: 14}}>
-                        <i className="fa fa-exclamation-triangle" style={{color: "red", marginRight: 10}}></i>
+                        <i className="fa fa-exclamation-triangle" style={{color: "yellow", marginRight: 10}}></i>
                         Opps! something went wrong
                     </div>
                     <div onClick={show_home_page} style={{backgroundColor: "slateblue", padding: 14, color: "white", cursor: "pointer", marginTop: 20, width: "fit-content", borderRadius: 9, }}>
