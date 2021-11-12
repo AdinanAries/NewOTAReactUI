@@ -321,7 +321,7 @@ footer {
   border-radius: 9px;
 }
 .searchFormChkInputLbl {
-  padding: 14px;
+  padding: 14px 0;
   width: 33%;
   border-radius: 6px;
   /*background-color: rgb(26, 102, 153);*/

@@ -9,95 +9,102 @@ function SearchForm(){
                         <div id="forms_main_class_guests_cabin_settings_pane" className="forms_class_guests_cabin_settings_pane">
                             <p onClick={()=>document.getElementById("forms_main_class_guests_cabin_settings_pane").style.display = "none"} className="airports_auto_complete_close_btn">&times;</p>
                             <div id="add_travelers_settings_pane" style={{padding: 15, display: "none"}}>
-                                <p style={{textAlign: "center", fontWeight: "bolder", marginTop: 10, marginBottom: 20}}>
+                                <p style={{color: "rgba(0,0,0,0.7)", fontWeight: "bolder", fontSize: 17, marginTop: 10, marginBottom: 20}}>
                                     Add Travelers</p>
                                 <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         Adults</div>
                                     <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             -</div>
-                                        <div style={{width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{color: "rgba(0,0,0,0.7)", width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             1</div>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             +</div>
                                     </div>
                                 </div>
                                 <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        Children</div>
+                                    <div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        Children
+                                        <p style={{fontSize: 12, color: "rgba(0,0,0,0.6)"}}>Ages 2 to 17</p>
+                                        </div>
                                     <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             -</div>
-                                        <div style={{width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{color: "rgba(0,0,0,0.7)", width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             0</div>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             +</div>
                                     </div>
                                 </div>
                                 <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        Infants</div>
+                                    <div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        Infants
+                                        <p style={{fontSize: 12, color: "rgba(0,0,0,0.6)"}}>Younger than 2</p>
+                                    </div>
                                     <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             -</div>
-                                        <div style={{width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{color: "rgba(0,0,0,0.7)", width: 40, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             0</div>
-                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 30, height: 30, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                        <div style={{cursor: "pointer", borderRadius: "100%", border: "1px solid rgba(0,0,0,0.3)", width: 35, height: 35, textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                             +</div>
                                     </div>
                                 </div>
                             </div>
                             <div id="select_cabin_settings_pane" style={{padding: 15, display: "none"}}>
-                                <p style={{textAlign: "center", fontWeight: "bolder", marginTop: 10, marginBottom: 20}}>
+                                <p style={{color: "rgba(0,0,0,0.7)", fontWeight: "bolder", marginTop: 10, marginBottom: 20}}>
                                     Select Cabin</p>
                                 <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="select_cabin_economy_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         Economy</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="select_cabin_economy_chk" style={{width: 20, height: 20}} type="radio" checked="true"/>
                                     </div>
                                 </div>
                                 <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="select_cabin_business_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         Business</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="select_cabin_business_chk" style={{width: 20, height: 20}} type="radio" />
                                     </div>
                                 </div>
                                 <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="select_cabin_first_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         First</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="select_cabin_first_chk" style={{width: 20, height: 20}} type="radio" />
                                     </div>
                                 </div>
                             </div>
                             <div id="select_trip_round_settings_pane" style={{padding: 15, display: "none"}}>
-                                <p style={{textAlign: "center", fontWeight: "bolder", marginTop: 10, marginBottom: 20}}>
+                                <p style={{color: "rgba(0,0,0,0.7)", fontWeight: "bolder", marginTop: 10, marginBottom: 20}}>
                                     Select Trip Round</p>
                                 <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="trip_round_round_trip_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         Round-trip</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="trip_round_round_trip_chk" style={{width: 20, height: 20}} type="radio" checked="true"/>
                                     </div>
                                 </div>
                                 <div style={{cursor: "pointer", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="trip_round_one_way_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         One-way</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="trip_round_one_way_chk" style={{width: 20, height: 20}} type="radio" />
                                     </div>
                                 </div>
                                 <div style={{cursor: "not-allowed", display: "flex", flexDirection: "row", justifyContent: "space-between", marginBottom: 10}}>
-                                    <label><div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    <label htmlFor="trip_round_multi_city_chk"><div style={{color: "rgba(0,0,0,0.7)", height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                         Multi-city</div></label>
                                     <div style={{height: 30, display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                                        <input type="radio" />
+                                        <input id="trip_round_multi_city_chk" style={{width: 20, height: 20}} type="radio" />
                                     </div>
                                 </div>
                             </div>
+                            <div onClick={()=>document.getElementById("forms_main_class_guests_cabin_settings_pane").style.display = "none"} style={{cursor: "pointer", padding: 10, margin: 10, marginTop: 0, backgroundColor: "rgb(23, 87, 148)", color: "white", textAlign: "center", borderRadius: 9, textAlign: "center"}}>
+                                    Done
+                                </div>
                         </div>
                         <div onClick={show_cabin_settings_pane} className="searchFormChkInputLbl" style={{marginRight: 5}}>
                             <i style={{fontSize: 15, marginRight: 10}} className="fa fa-level-up"></i>
@@ -109,7 +116,7 @@ function SearchForm(){
                         </div>
                         <div onClick={show_trip_round_settings_pane} className="searchFormChkInputLbl">
                             <i style={{fontSize: 15, marginRight: 10}} className="fa fa-repeat"></i>
-                            One-way
+                            Round-trip
                         </div>
                         <i style={{marginLeft: 10, color: "rgb(43, 52, 61)"}} className="fa fa-angle-down"></i>
                     </div>
