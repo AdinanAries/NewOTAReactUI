@@ -1,28 +1,41 @@
 export function show_login_page(){
-
+    window.scrollTo(0, 0);
     change_nav_active_icon("mobile_login_menu_item", "desktop_login_menu_item");
 
+    document.getElementById("explore_page").style.display="none";
     document.getElementById("home_page").style.display="none";
     document.getElementById("trips_page").style.display="none";
     document.getElementById("login_page").style.display="block";
 }
 
 export function show_home_page(){
-
+    window.scrollTo(0, 0);
     change_nav_active_icon("mobile_search_menu_item", "desktop_search_menu_item");
 
+    document.getElementById("explore_page").style.display="none";
     document.getElementById("login_page").style.display="none";
     document.getElementById("trips_page").style.display="none";
     document.getElementById("home_page").style.display="block";
 }
 
 export function show_trips_page(){
-
+    window.scrollTo(0, 0);
     change_nav_active_icon("mobile_trips_menu_item", "desktop_trips_menu_item");
 
+    document.getElementById("explore_page").style.display="none";
     document.getElementById("login_page").style.display="none";
     document.getElementById("home_page").style.display="none";
     document.getElementById("trips_page").style.display="block";
+}
+
+export function show_explore_page(){
+    window.scrollTo(0, 0);
+    change_nav_active_icon("mobile_search_menu_item", "desktop_explore_menu_item");
+
+    document.getElementById("trips_page").style.display="none";
+    document.getElementById("login_page").style.display="none";
+    document.getElementById("home_page").style.display="none";
+    document.getElementById("explore_page").style.display="block";
 }
 
 export function change_nav_active_icon(mobile_id, desktop_id){

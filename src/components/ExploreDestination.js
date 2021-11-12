@@ -1,5 +1,7 @@
 import explore_destination_img from "../explore_destination_img.jpg";
 
+import { show_explore_page } from "../helpers/PageRoutingFuncs";
+
 export default function ExploreDestinations(){
     return (
         <div className="wrapper">
@@ -12,7 +14,7 @@ export default function ExploreDestinations(){
                     We got you on these amaizing trip ideas that will 
                     make you want to do it over again
                 </p>
-                <div style={{textAlign: "center", width:"fit-content", backgroundColor: "#c900b0", fontFamily: "'Prompt', sans-serif", color: "white", padding: 14, borderRadius: 9}}>
+                <div onClick={show_explore_page} style={{textAlign: "center", width:"fit-content", backgroundColor: "#c900b0", fontFamily: "'Prompt', sans-serif", color: "white", padding: 14, borderRadius: 9}}>
                     Start Exploring
                 </div>
             </div>

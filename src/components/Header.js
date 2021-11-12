@@ -2,7 +2,7 @@ import { show_main_mobile_menu } from "./MobileMenu";
 
 import WillgoLogo from '../WillgoLogo.png';
 
-import { show_login_page, show_home_page, show_trips_page } from '../helpers/PageRoutingFuncs';
+import { show_login_page, show_home_page, show_trips_page, show_explore_page } from '../helpers/PageRoutingFuncs';
 
 function Header(){
     return (
@@ -28,7 +28,7 @@ function Header(){
                                 <i className="fa fa-search" />Search
                             </p>
                         </div>
-                        <div id="desktop_explore_menu_item" className="each-header-menu-item">
+                        <div id="desktop_explore_menu_item" onClick={show_explore_page} className="each-header-menu-item">
                             <p>
                                 <i className="fa fa-globe" />Explore
                             </p>
