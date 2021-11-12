@@ -577,7 +577,7 @@ footer {
   .search-form-container {
     margin-left: 0;
     padding: 5px;
-    margin: 5px;
+    border: none;
   }
   .forms_class_guests_cabin_settings_container {
     background: none;
