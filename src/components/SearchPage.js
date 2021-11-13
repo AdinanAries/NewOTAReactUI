@@ -2,7 +2,7 @@ import SearchPageMain from "./SearchPageMain";
 
 function SearchPage(){
     return (
-        <div>
+        <div id="search_page">
             <SearchPageMain />
         </div>
     );

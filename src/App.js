@@ -8,6 +8,7 @@ import MobileMenu from './components/MobileMenu';
 import TripsPage from "./components/TripsPage";
 import LoginPage from './components/LoginPage';
 import ExplorePage from './components/ExplorePage';
+import SearchPage from './components/SearchPage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <TripsPage />
       <LoginPage />
       <ExplorePage />
+      <SearchPage />
       <Footer />
     </div>
   );

@@ -1,5 +1,7 @@
 import $ from "jquery";
 
+import { show_search_page } from "../helpers/PageRoutingFuncs";
+
 function SearchForm(){
     return(
         <div className="main-search-form">
@@ -125,7 +127,7 @@ function SearchForm(){
                     <div style={{width: "100%"}}>
                         <div className="main-search_txt_input">
                             <i style={{fontSize: 20, marginRight: 5}} className="fa fa-calendar-o"></i>
-                            <input id="departure_return_dates_input" type="text" placeholder="departure - return"/>
+                            <input id="departure_return_dates_input" type="text" readOnly="true" placeholder="departure - return"/>
                         </div>
                     </div>
                 </div>
@@ -206,7 +208,7 @@ function SearchForm(){
                     </div>
                 </div>
             </div>
-            <div  className="searchBtn">
+            <div onClick={show_search_page} className="searchBtn">
                 <i className="fa fa-search" style={{marginRight: 5, color: "rgba(255,255,255,0.4)"}}></i>Search
             </div>
         </div>

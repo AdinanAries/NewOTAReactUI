@@ -10,7 +10,7 @@ function Header(){
             <div className="wrapper">
                 <div className="header_content_container" style={{display: "flex", justifyContent: "space-between"}}>
                     <div style={{height: "60px", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                        <div className="site-logo">
+                        <div onClick={show_home_page} className="site-logo">
                             <p className="site-logo-img">
                                 <img src={WillgoLogo}/></p>
                             <div className="site-logo-txt">
