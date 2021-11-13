@@ -5,8 +5,39 @@ import { show_explore_page } from "../helpers/PageRoutingFuncs";
 export default function ResultsListContainer(){
     return (
         <div style={{marginTop: 10, minHeight: "calc(100vh - 300px)", padding: "10px 0", borderTop: "1px solid rgba(0,0,0,0.1)"}}>
-            <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-                <div style={{width: "19%"}}>
+            <div id="itinerary_and_filter_icon">
+                <div>
+                    <p style={{fontSize: 19, color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
+                        New York to Canada
+                    </p>
+                    <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)", marginTop: 5}}>Nov 25 - Nov 27</p>
+                </div>
+                <p style={{fontWeight: "bolder", color: "rgba(0,0,0,0.7)", fontSize: 17}}>
+                    <i style={{marginRight: 7}} className="fa fa-sliders" ariaHidden="true"></i>
+                    Filters</p>
+            </div>
+            <div className="search_list_main_flex_container">
+                <div className="search_list_main__settings_section">
+                    <div id="mobile_sort_and_filter_title_and_sort">
+                        <div style={{height: 50, borderBottom: "1px solid rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                            <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+                                <p style={{color: "rgba(0,0,0,0.7)", fontWeight: "bolder", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                                    Sort and Filter
+                                </p>
+                                <p id="close_filter_and_sort_btn" style={{color: "rgba(255,0,0,0.6)", fontSize: 33, marginRight: 5}}>
+                                    &times;
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{marginTop: "20px", marginBottom: 35}}>
+                            <p style={{fontWeight: "bolder", color: "rgba(0,0,0,0.7)", fontSize: 17}}>Sort by</p>
+                            <select style={{padding: 14, marginTop: 12, width: "100%", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 9, color: "rgba(0,0,0,0.7)",}}>
+                                <option>
+                                    Price (Lowest)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
                     <p style={{fontWeight: "bolder", color: "rgba(0,0,0,0.7)", fontSize: 17, marginBottom: 30}}>
                         <i style={{marginRight: 7}} className="fa fa-sliders" ariaHidden="true"></i>
                         Filter by</p>
@@ -102,10 +133,33 @@ export default function ResultsListContainer(){
                         </div>
                     </div>
                 </div>
-                <div style={{width: "calc(66% - 10px)"}}>
-
+                <div className="search_list_main_tickets_section">
+                <div className="search_result_inportant_notice_container">
+                    <div>
+                        <p style={{color: "rgba(0,0,0,0.7)", fontSize: 16, fontFamily: "'Prompt', sans-serif", fontWeight: "bolder", marginBottom: 10}}>
+                            <i className="fa fa-info-circle" style={{fontSize: 19, marginRight: 5}}></i>Important Notice
+                        </p>
+                        <p style={{color: "rgba(0,0,0,0.7)", fontSize: 15}}>
+                            Due to expansion of services and maintenance work, we are unable to show trip destinations at this moment. 
+                            We apologize for any inconvenience
+                        </p>
+                    </div>
+                    {/*<div style={{marginLeft: 10}}>
+                        <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)"}}>Sort by</p>
+                        <select style={{padding: 14, marginTop: 5, backgroundColor: "rgba(255,0,255,0.2)", border: "1px solid rgba(0,0,0,0.3)", borderRadius: 9, color: "rgba(0,0,0,0.7)",}}>
+                            <option>
+                                Price (Lowest)
+                            </option>
+                        </select>
+                    </div>*/}
                 </div>
-                <div style={{minHeight: 500, width: "15%"}}>
+                    <div id="search_results_list_items">
+                        <div style={{minHeight: 150, backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10}}>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="search_list_main_ads_section">
                     <div style={{height: 500, backgroundImage: `url('${explore_page_hero}')`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", padding: 20, display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         <p style={{color: "white", fontWeight: 1000, fontFamily: "'Prompt', sans-serif", fontSize: 19}}>
                             See the world,</p>

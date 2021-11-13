@@ -468,8 +468,79 @@ footer {
   justify-content: space-between;
   padding: 20px 10px;
 }
+.search_list_main_flex_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search_list_main__settings_section{
+  width: 19%;
+}
+.search_list_main_tickets_section{
+  width: calc(66% - 50px);
+}
+.search_list_main_ads_section{
+  min-height: 500px;
+  width: 15%;
+}
+.search_result_inportant_notice_container{
+  margin: 10px;
+  background-color: rgba(255,0,0,0.1);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,0,0,0.1);
+}
+#close_filter_and_sort_btn{
+  display: none;
+}
+#itinerary_and_filter_icon{
+  display: none;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
 @media screen and (max-width: 700px) {
+  #search_results_page_search_form{
+    display: none;
+  }
+  .search_list_main_flex_container{
+    display: block;
+  }
+  .search_list_main__settings_section{
+    display: none;
+    padding: 0 10px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+  }
+  .search_list_main_tickets_section{
+    width: 100%;
+    padding: 0 5px;
+  }
+  .search_list_main_ads_section{
+    display: none;
+  }
+  #close_filter_and_sort_btn{
+    display: block;
+  }
+  .search_result_inportant_notice_container{
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  #itinerary_and_filter_icon{
+    display: flex;
+  }
+  .search_result_inportant_notice_container{
+    background: none;
+    border: none;
+    margin-bottom: 20px;
+  }
   /*----------------------------------------------*/
   .daterangepicker:before {
     display: none !important;
