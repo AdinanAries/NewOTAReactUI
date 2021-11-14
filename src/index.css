@@ -474,6 +474,7 @@ footer {
   justify-content: space-between;
 }
 .search_list_main__settings_section{
+  animation: pop-in 0.2s ease-out;
   width: 19%;
 }
 .search_list_main_tickets_section{
@@ -501,8 +502,26 @@ footer {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.each_ticket_upper_flex{
+  display: flex;
+}
+.each_ticket_price_display{
+  text-align: right;
+}
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
 @media screen and (max-width: 700px) {
+  .each_ticket_upper_flex{
+    display: "block";
+  }
+  .each_ticket_price_display{
+    text-align: left;
+  }
+  .each_ticket_price_display_container{
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
   #search_results_page_search_form{
     display: none;
   }

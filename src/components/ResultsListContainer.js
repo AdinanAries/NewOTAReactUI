@@ -1,5 +1,7 @@
 import explore_page_hero from "../explore_page_hero.jpg";
 
+import deltaIcon from "../deltaIcon.png";
+
 import { show_explore_page } from "../helpers/PageRoutingFuncs";
 
 export default function ResultsListContainer(){
@@ -8,23 +10,25 @@ export default function ResultsListContainer(){
             <div id="itinerary_and_filter_icon">
                 <div>
                     <p style={{fontSize: 19, color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
-                        New York to Canada
+                        New York
+                        <span style={{margin: "0 10px", color: "rgba(0,0,0,0.5)",}}><i className="fa fa-exchange"></i></span>
+                        Canada
                     </p>
                     <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)", marginTop: 5}}>Nov 25 - Nov 27</p>
                 </div>
-                <p style={{fontWeight: "bolder", color: "rgba(0,0,0,0.7)", fontSize: 17}}>
+                <p onClick={()=>document.getElementById("search_list_main__settings_section").style.display="block"} style={{fontWeight: "bolder", color: "rgb(11, 71, 95)", fontSize: 17}}>
                     <i style={{marginRight: 7}} className="fa fa-sliders" ariaHidden="true"></i>
                     Filters</p>
             </div>
             <div className="search_list_main_flex_container">
-                <div className="search_list_main__settings_section">
+                <div id="search_list_main__settings_section" className="search_list_main__settings_section">
                     <div id="mobile_sort_and_filter_title_and_sort">
                         <div style={{height: 50, borderBottom: "1px solid rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                             <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
                                 <p style={{color: "rgba(0,0,0,0.7)", fontWeight: "bolder", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                                     Sort and Filter
                                 </p>
-                                <p id="close_filter_and_sort_btn" style={{color: "rgba(255,0,0,0.6)", fontSize: 33, marginRight: 5}}>
+                                <p onClick={()=>document.getElementById("search_list_main__settings_section").style.display="none"} id="close_filter_and_sort_btn" style={{color: "rgba(255,0,0,0.6)", fontSize: 33, marginRight: 5}}>
                                     &times;
                                 </p>
                             </div>
@@ -139,9 +143,10 @@ export default function ResultsListContainer(){
                         <p style={{color: "rgba(0,0,0,0.7)", fontSize: 16, fontFamily: "'Prompt', sans-serif", fontWeight: "bolder", marginBottom: 10}}>
                             <i className="fa fa-info-circle" style={{fontSize: 19, marginRight: 5}}></i>Important Notice
                         </p>
-                        <p style={{color: "rgba(0,0,0,0.7)", fontSize: 15}}>
-                            Due to expansion of services and maintenance work, we are unable to show trip destinations at this moment. 
-                            We apologize for any inconvenience
+                        <p style={{color: "rgba(0,0,0,0.7)", fontSize: 14}}>
+                            Prices displayed include taxes and may change based on availability. 
+                            You can review any additional fees before checkout. 
+                            Prices are not final until you complete your purchase.
                         </p>
                     </div>
                     {/*<div style={{marginLeft: 10}}>
@@ -154,8 +159,113 @@ export default function ResultsListContainer(){
                     </div>*/}
                 </div>
                     <div id="search_results_list_items">
-                        <div style={{minHeight: 150, backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10}}>
-
+                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                            <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Montreal (YUB) - New York (LGA)</p>
+                                </div>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>5h 9m (1 stop)</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>2h 1m in Toronto(yyz)</p>
+                                </div>
+                                <div className="each_ticket_price_display_container">
+                                    <p className="each_ticket_price_display" style={{color: "rgba(0,0,0,0.8)", fontWeight: "1000", fontSize: 27, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>
+                                        $335</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Roundtrip per traveler</p>
+                                </div>
+                            </div>
+                            <div style={{marginTop: 5}}>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12, marginBottom: 10}}>
+                                    <img src={deltaIcon} style={{width: 27, height: "auto", objectFit: "conver"}} />
+                                    Delta &#8226;
+                                    Delta 7204 and 7138 operated by WestJet
+                                </p>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>
+                                    2 cleaning and safety practices
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                            <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Montreal (YUB) - New York (LGA)</p>
+                                </div>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>5h 9m (1 stop)</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>2h 1m in Toronto(yyz)</p>
+                                </div>
+                                <div className="each_ticket_price_display_container">
+                                    <p className="each_ticket_price_display" style={{color: "rgba(0,0,0,0.8)", fontWeight: "1000", fontSize: 27, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>
+                                        $335</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Roundtrip per traveler</p>
+                                </div>
+                            </div>
+                            <div style={{marginTop: 5}}>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12, marginBottom: 10}}>
+                                    <img src={deltaIcon} style={{width: 27, height: "auto", objectFit: "conver"}} />
+                                    Delta &#8226;
+                                    Delta 7204 and 7138 operated by WestJet
+                                </p>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>
+                                    2 cleaning and safety practices
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                            <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Montreal (YUB) - New York (LGA)</p>
+                                </div>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>5h 9m (1 stop)</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>2h 1m in Toronto(yyz)</p>
+                                </div>
+                                <div className="each_ticket_price_display_container">
+                                    <p className="each_ticket_price_display" style={{color: "rgba(0,0,0,0.8)", fontWeight: "1000", fontSize: 27, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>
+                                        $335</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Roundtrip per traveler</p>
+                                </div>
+                            </div>
+                            <div style={{marginTop: 5}}>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12, marginBottom: 10}}>
+                                    <img src={deltaIcon} style={{width: 27, height: "auto", objectFit: "conver"}} />
+                                    Delta &#8226;
+                                    Delta 7204 and 7138 operated by WestJet
+                                </p>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>
+                                    2 cleaning and safety practices
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                            <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Montreal (YUB) - New York (LGA)</p>
+                                </div>
+                                <div>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>5h 9m (1 stop)</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>2h 1m in Toronto(yyz)</p>
+                                </div>
+                                <div className="each_ticket_price_display_container">
+                                    <p className="each_ticket_price_display" style={{color: "rgba(0,0,0,0.8)", fontWeight: "1000", fontSize: 27, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>
+                                        $335</p>
+                                    <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>Roundtrip per traveler</p>
+                                </div>
+                            </div>
+                            <div style={{marginTop: 5}}>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12, marginBottom: 10}}>
+                                    <img src={deltaIcon} style={{width: 27, height: "auto", objectFit: "conver"}} />
+                                    Delta &#8226;
+                                    Delta 7204 and 7138 operated by WestJet
+                                </p>
+                                <p style={{color: "rgba(0,0,0,0.8)", fontSize: 12}}>
+                                    2 cleaning and safety practices
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
