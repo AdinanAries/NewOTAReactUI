@@ -598,6 +598,8 @@ footer {
     width: 100vw;
     bottom: 0;
     left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/
   }
   .checkout_page_all_info_flex_container{
     display: block;
@@ -614,6 +616,8 @@ footer {
     border: none;
     right: 0;
     width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/
   }
   .each_ticket_upper_flex{
     display: block;
