@@ -9,11 +9,13 @@ import TripsPage from "./components/TripsPage";
 import LoginPage from './components/LoginPage';
 import ExplorePage from './components/ExplorePage';
 import SearchPage from './components/SearchPage';
+import SelectedTicketPane from './components/SelectedTicketPane';
 
 
 function App() {
   return (
     <div className="">
+      <SelectedTicketPane />
       <MobileMenu />
       <Header />
       <HomePage />

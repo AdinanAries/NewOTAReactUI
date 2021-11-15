@@ -509,8 +509,49 @@ footer {
 .each_ticket_price_display{
   text-align: right;
 }
+.display_more_info_pane{
+  display: none;
+  animation: pop-in 0.2s ease-out;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 700px;
+  z-index: 1002;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  overflow: auto;
+  padding-bottom: 80px;
+}
+.selected_ticket_book_btn_container{
+  position: fixed;
+  width: 685px;
+  background-color: white;
+  padding: 10px;
+  bottom: 0;
+  right: 15px;
+}
+.selected_ticket_book_btn{
+  cursor: pointer;
+  color: white;
+  background-color: #c900b0;
+  padding: 14px;
+  border-radius: 9px;
+  text-align: center;
+}
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
 @media screen and (max-width: 700px) {
+  .display_more_info_pane{
+    width: 100vw;
+    box-shadow: none;
+  }
+  .selected_ticket_book_btn_container{
+    position: fixed;
+    border: none;
+    right: 0;
+    width: 100%;
+  }
   .each_ticket_upper_flex{
     display: block;
   }
@@ -549,17 +590,14 @@ footer {
   #close_filter_and_sort_btn{
     display: block;
   }
-  .search_result_inportant_notice_container{
-    margin: 0;
-    margin-bottom: 5px;
-  }
   #itinerary_and_filter_icon{
     display: flex;
   }
   .search_result_inportant_notice_container{
+    margin: 0;
     background: none;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   /*----------------------------------------------*/
   .daterangepicker:before {

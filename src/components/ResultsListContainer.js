@@ -3,18 +3,19 @@ import explore_page_hero from "../explore_page_hero.jpg";
 import deltaIcon from "../deltaIcon.png";
 
 import { show_explore_page } from "../helpers/PageRoutingFuncs";
+import { show_selected_ticket_details_pane } from "./SelectedTicketPane";
 
 export default function ResultsListContainer(){
     return (
-        <div style={{marginTop: 10, minHeight: "calc(100vh - 300px)", padding: "10px 0", borderTop: "1px solid rgba(0,0,0,0.1)"}}>
+        <div style={{marginTop: 10, minHeight: "calc(100vh - 300px)", padding: 0, borderTop: "1px solid rgba(0,0,0,0.1)"}}>
             <div id="itinerary_and_filter_icon">
                 <div>
-                    <p style={{fontSize: 19, fontFamily: "'Prompt', sans-serif", color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
+                    <p style={{fontSize: 16, fontFamily: "'Prompt', sans-serif", color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
                         New York
                         <span style={{margin: "0 10px", color: "rgba(0,0,0,0.4)"}}><i className="fa fa-exchange"></i></span>
                         Canada
                     </p>
-                    <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)", marginTop: 5}}>Nov 25 - Nov 27</p>
+                    <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)", marginTop: 2}}>Nov 25 - Nov 27</p>
                 </div>
                 <p onClick={()=>document.getElementById("search_list_main__settings_section").style.display="block"} style={{fontWeight: "bolder", color: "rgb(11, 71, 95)", fontSize: 17}}>
                     <i style={{marginRight: 7}} className="fa fa-sliders" ariaHidden="true"></i>
@@ -141,7 +142,7 @@ export default function ResultsListContainer(){
                 <div className="search_result_inportant_notice_container">
                     <div>
                         <p style={{color: "rgba(0,0,0,0.7)", fontSize: 16, fontFamily: "'Prompt', sans-serif", fontWeight: "bolder", marginBottom: 10}}>
-                            <i className="fa fa-info-circle" style={{fontSize: 19, marginRight: 5}}></i>Important Notice
+                            <i className="fa fa-info-circle" style={{fontSize: 15, marginRight: 5}}></i>Important Notice
                         </p>
                         <p style={{color: "rgba(0,0,0,0.7)", fontSize: 14}}>
                             Prices displayed include taxes and may change based on availability. 
@@ -159,7 +160,7 @@ export default function ResultsListContainer(){
                     </div>*/}
                 </div>
                     <div id="search_results_list_items">
-                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                        <div onClick={show_selected_ticket_details_pane} style={{cursor: "pointer", backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
                             <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
                                 <div>
                                     <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
@@ -186,7 +187,7 @@ export default function ResultsListContainer(){
                                 </p>
                             </div>
                         </div>
-                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                        <div onClick={show_selected_ticket_details_pane} style={{cursor: "pointer", backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
                             <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
                                 <div>
                                     <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
@@ -213,7 +214,7 @@ export default function ResultsListContainer(){
                                 </p>
                             </div>
                         </div>
-                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                        <div onClick={show_selected_ticket_details_pane} style={{cursor: "pointer", backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
                             <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
                                 <div>
                                     <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
@@ -240,7 +241,7 @@ export default function ResultsListContainer(){
                                 </p>
                             </div>
                         </div>
-                        <div style={{backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
+                        <div onClick={show_selected_ticket_details_pane} style={{cursor: "pointer", backgroundColor: "rgba(255,255,255,0.7)", borderRadius: 9, marginBottom: 10, padding: "15px 10px"}}>
                             <div className="each_ticket_upper_flex" style={{flexDirection: "row", justifyContent: "space-between"}}>
                                 <div>
                                     <p style={{color: "rgba(0,0,0,0.8)", fontWeight: "bolder", fontSize: 16, fontFamily: "'Prompt', sans-serif", marginBottom: 2}}>9:45am - 2:54pm</p>
