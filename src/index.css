@@ -125,6 +125,7 @@ header {
   color: #c900b0;
 }
 .site-logo{
+  cursor: pointer;
   display: flex;
 }
 .site-logo-img{

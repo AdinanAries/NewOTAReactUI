@@ -150,7 +150,7 @@ function SearchForm(){
                                                         New York (LGA - Laguardia)
                                                     </p>
                                                     <p style={{fontSize: 14, color: "rgba(0,0,0,0.8)"}}>
-                                                        Ghana
+                                                        United States
                                                     </p>
                                                 </div>
                                             </div>
@@ -189,7 +189,7 @@ function SearchForm(){
                                                         New York (LGA - Laguardia)
                                                     </p>
                                                     <p style={{fontSize: 14, color: "rgba(0,0,0,0.8)"}}>
-                                                        Ghana
+                                                        United States
                                                     </p>
                                                 </div>
                                             </div>

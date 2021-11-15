@@ -9,9 +9,9 @@ export default function ResultsListContainer(){
         <div style={{marginTop: 10, minHeight: "calc(100vh - 300px)", padding: "10px 0", borderTop: "1px solid rgba(0,0,0,0.1)"}}>
             <div id="itinerary_and_filter_icon">
                 <div>
-                    <p style={{fontSize: 19, color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
+                    <p style={{fontSize: 19, fontFamily: "'Prompt', sans-serif", color: "rgba(0,0,0,0.7)", fontWeight: "bolder"}}>
                         New York
-                        <span style={{margin: "0 10px", color: "rgba(0,0,0,0.5)",}}><i className="fa fa-exchange"></i></span>
+                        <span style={{margin: "0 10px", color: "rgba(0,0,0,0.4)"}}><i className="fa fa-exchange"></i></span>
                         Canada
                     </p>
                     <p style={{fontSize: 13, color: "rgba(0,0,0,0.7)", marginTop: 5}}>Nov 25 - Nov 27</p>
@@ -279,7 +279,7 @@ export default function ResultsListContainer(){
                             We got you on these amaizing trip ideas that will 
                             make you want to do it over again
                         </p>
-                        <div onClick={show_explore_page} style={{textAlign: "center", width:"fit-content", backgroundColor: "#c900b0", fontSize: 15, fontFamily: "'Prompt', sans-serif", color: "white", padding: 14, borderRadius: 9}}>
+                        <div onClick={show_explore_page} style={{textAlign: "center", cursor: "pointer", width:"fit-content", backgroundColor: "#c900b0", fontSize: 15, fontFamily: "'Prompt', sans-serif", color: "white", padding: 14, borderRadius: 9}}>
                             Start exploring
                         </div>
                     </div>
