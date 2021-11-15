@@ -577,7 +577,8 @@ footer {
   font-weight: bolder;
   margin-bottom: 10px;
   text-align: right;
-  color: rgba(0, 0, 0, 0.7);
+  color: #c900b0;
+  letter-spacing: 1px;
   font-family: 'Prompt', sans-serif;
 }
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
