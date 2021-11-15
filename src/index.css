@@ -540,8 +540,71 @@ footer {
   border-radius: 9px;
   text-align: center;
 }
+#booking_start_checkout_page_container{
+  display: none;
+  animation: pop-in 0.2s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1003;
+  overflow: auto;
+}
+.checkout_page_all_info_flex_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkout_page_all_info_flex_left{
+  width: calc(65% - 30px);
+}
+.checkout_page_all_info_flex_right{
+  width: calc(35%);
+}
+.checkout_page_main_checkout_btn{
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(23, 87, 148);
+  color: white;
+  padding: 14px;
+  border-radius: 9px;
+}
+.checkout_page_mobile_button_place_total_price_display{
+  display: none;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Prompt', sans-serif;
+}
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
 @media screen and (max-width: 700px) {
+  #booking_start_checkout_page_container{
+    padding-bottom: 105px;
+  }
+  .checkout_page_main_checkout_btn{
+    margin-top: 0;
+  }
+  .checkout_page_mobile_button_place_total_price_display{
+    display: block;
+  }
+  .checkout_page_main_checkout_btn_container{
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+  }
+  .checkout_page_all_info_flex_container{
+    display: block;
+  }
+  .checkout_page_all_info_flex_left, .checkout_page_all_info_flex_right{
+    width: 100%;
+  }
   .display_more_info_pane{
     width: 100vw;
     box-shadow: none;
