@@ -573,18 +573,18 @@ footer {
 }
 .checkout_page_mobile_button_place_total_price_display{
   display: none;
-  font-size: 14px;
-  font-weight: bolder;
+  font-size: 13px;
   margin-bottom: 10px;
-  text-align: right;
-  color: #c900b0;
+  /*color: #c900b0;*/
+  color: rgba(0, 0, 0, 0.6);
   letter-spacing: 1px;
   font-family: 'Prompt', sans-serif;
+  text-align: center;
 }
 /*https://www.reshot.com/free-svg-icons/item/deal-sites-2X5DS6LMUB/*/
 @media screen and (max-width: 700px) {
   #booking_start_checkout_page_container{
-    padding-bottom: 105px;
+    padding-bottom: 135px;
   }
   .checkout_page_main_checkout_btn{
     margin-top: 0;

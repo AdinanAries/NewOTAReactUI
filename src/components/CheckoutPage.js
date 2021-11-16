@@ -131,7 +131,8 @@ export default function CheckoutPage(){
                             </div>
                             <div className="checkout_page_main_checkout_btn_container">
                                 <p className="checkout_page_mobile_button_place_total_price_display">
-                                    total: $133.28
+                                    <i style={{marginRight: 5}} className="fa fa-info-circle"></i>
+                                    The total amout you pay is $133.28. See price summary at the bottom
                                 </p>
                                 <div className="checkout_page_main_checkout_btn">
                                     <i style={{marginRight: 5, color: "rgba(255,255,255,0.5)"}} className="fa fa-credit-card"></i>Checkout
