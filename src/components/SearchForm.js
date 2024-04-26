@@ -5,7 +5,7 @@ import { show_search_page } from "../helpers/PageRoutingFuncs";
 function SearchForm(){
     return(
         <div className="main-search-form">
-            <div className="two-search-inputs-container" style={{marginBottom: 5}}>
+            <div className="two-search-inputs-container">
                 <div className="each_flex-side first">
                     <div className="forms_class_guests_cabin_settings_container">
                         <div id="forms_main_class_guests_cabin_settings_pane" className="forms_class_guests_cabin_settings_pane">
